@@ -26,6 +26,10 @@ Columns:
     - paused 
     - exited (displays also exit code)
     - dead
+ * PORTS - Network ports for container. For example (4848/tcp, 8181/tcp, 0.0.0.0:8081->8080/tcp) means
+    - container exposes port 4848 and 8181
+    - container published its port 8080 to host port 8081
+ * NAMES - Name of container. Random if not specified. For docker-compose, its base directory + service name
 ---
 ``` docker ps -a``` or ```docker ps --all```
 
